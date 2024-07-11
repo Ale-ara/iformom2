@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
+<html lang=pt-br" dir="ltr"><head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Teste</title>
-   
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>[OM] Iform</title>
+        <link rel="icon" href="https://www.habbo.com.br/habbo-imaging/badge/b09134s43114s41194f74f3131b8a5c9311558ee0f561db7e0.gif">
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scales=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body,
@@ -199,6 +199,111 @@
         .success-message.show {
             display: block;
         }
+
+ /* Media Queries */
+
+ @media only screen and (max-width: 768px) {
+            .container {
+                margin: 100px auto;
+                padding: 20px;
+            }
+            
+            .header_container span {
+                right: 10px;
+            }
+            
+            .header_img {
+                right: 5px;
+            }
+            
+            .header_logo {
+                display: block;
+                font-size: 1.2rem;
+                margin-right: 5px;
+            }
+            
+            .header_toggle {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            .container {
+                margin: 80px auto;
+                padding: 10px;
+            }
+            
+            .header_container span {
+                right: 5px;
+            }
+            
+            .header_img {
+                right: 0;
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media only screen and (min-width: 1600px) {
+    .container {
+        max-width: 1000px; /* Ajusta a largura máxima do container conforme necessário */
+        margin: 320px auto 100px; /* Ajusta a margem superior e inferior para centralizar e posicionar o container mais abaixo */
+        padding: 40px; /* Ajusta o espaçamento interno conforme necessário */
+    }
+}
+
+    .header_container span {
+        font-size: 1.6rem; /* Aumenta o tamanho da fonte do span do cabeçalho */
+    }
+
+    .header_img {
+        width: 50px; /* Aumenta o tamanho da imagem do cabeçalho */
+        height: 50px;
+    }
+
+    .header_logo {
+        font-size: 1.8rem; /* Aumenta o tamanho da fonte do logo */
+    }
+
+    .form-control {
+        height: 60px; /* Aumenta a altura dos campos de formulário */
+        font-size: 20px; /* Aumenta o tamanho da fonte nos campos de formulário */
+    }
+
+    .btn-primary{
+    height: 60px; /* Aumenta a altura dos botões */
+        font-size: 20px; /* Aumenta o tamanho da fonte nos botões */
+    }
+
+    .btn-secondary,
+    .btn-success {
+        height: 60px; /* Aumenta a altura dos botões */
+        font-size: 20px; /* Aumenta o tamanho da fonte nos botões */
+    }
+
+    @media only screen and (max-width: 420px) {
+    .container {
+        max-width: 300px; /* Ajusta a largura máxima do container para telas estreitas */
+        margin: 320px auto 100px; /* Ajusta a margem superior e inferior para centralizar e posicionar o container mais abaixo */
+        padding: 20px; /* Ajusta o espaçamento interno conforme necessário */
+    }
+
+    .btn-primary {
+    height: 60px; /* Aumenta a altura dos botões */
+    font-size: 20px; /* Aumenta o tamanho da fonte nos botões */
+    margin-top: 10px; /* Ajusta a margem superior conforme necessário */
+    margin-left: 20px; /* Ajusta a margem esquerda para posicionar o botão mais à esquerda */
+}
+
+    .btn-secondary,
+    .btn-success {
+        height: 60px; /* Aumenta a altura dos botões */
+        font-size: 20px; /* Aumenta o tamanho da fonte nos botões */
+    }
+
+}
+
+
     </style>
 </head>
 
@@ -247,7 +352,7 @@
                     <input type="text" class="form-control" id="editComments" name="editComments" placeholder="Comentários">
                 </div>
                 <button type="submit" class="btn btn-primary">Salvar</button>
-                <button class="btn btn-success" onclick="sendDataToGoogleSheets()">Confirmar Envio</button>
+              
             </form>
         </div>
 
