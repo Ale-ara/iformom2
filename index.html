@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Teste</title>
-    <!-- Bootstrap CSS -->
+   
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body,
@@ -222,7 +222,7 @@
 
         <div id="resultSection" class="result-section">
             <p><strong>Nome de Usuário:</strong> <span id="resultUsername"></span></p>
-            <p><strong>Curso Aplicado:</strong> Aula de Segurança Operacional (ASO)</p>
+            <p><strong>Curso Aplicado:</strong> Aula de Valorização (AVP)</p>
             <p><strong>Data e Horário:</strong> <span id="resultDateTime"></span></p>
             <p><strong>Nickname dos Alunos Presentes:</strong> <span id="resultPresentStudents"></span></p>
             <p><strong>Nickname dos Alunos Aprovados:</strong> <span id="resultApprovedStudents"></span></p>
@@ -307,7 +307,7 @@
         function sendDataToGoogleSheets() {
             const data = {
                 username: document.getElementById('resultUsername').textContent,
-                course: 'Aula de Segurança Operacional (ASO)',
+                course: 'Aula de Valorização (AVP)',
                 dateTime: document.getElementById('resultDateTime').textContent,
                 presentStudents: document.getElementById('resultPresentStudents').textContent,
                 approvedStudents: document.getElementById('resultApprovedStudents').textContent,
